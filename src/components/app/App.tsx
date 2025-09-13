@@ -11,7 +11,7 @@ type VoteType = keyof Votes;
 export default function App() {
   const [votes, setVotes] = useState<Votes>({
     good: 0,
-    neutral: 0,
+    neutral: 1,
     bad: 0,
   });
 
