@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './App.module.css';
-import CafeInfo from '../cafe-info/CafeInfo';
-import VoteOptions from '../vote-options/VoteOptions';
-import VoteStatus from '../vote-status/VoteStatus';
-import Notification from '../notification/Notification';
+import CafeInfo from '../CafeInfo/CafeInfo';
+import VoteOptions from '../VoteOptions/VoteOptions';
+import VoteStatus from '../voteStatus/VoteStatus';
+import Notification from '../Notification/Notification';
 import type { Votes } from '../../types/votes';
 
 type VoteType = keyof Votes;
