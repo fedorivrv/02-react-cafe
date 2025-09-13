@@ -5,9 +5,8 @@
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
-    "jsx": "react-jsx",        // важливо для React 17+
+    "jsx": "react-jsx",        
     "moduleResolution": "node",
-    "ignoreDeprecations": "6.0",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
