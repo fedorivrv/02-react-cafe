@@ -4,9 +4,7 @@ import CafeInfo from '../CafeInfo/CafeInfo';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStatus from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
-import type { Votes } from '../../types/votes';
-
-type VoteType = keyof Votes;
+import type { Votes, VoteType } from '../../types/votes';
 
 export default function App() {
   const [votes, setVotes] = useState<Votes>({
@@ -29,6 +27,7 @@ export default function App() {
       [type]: prev[type] + 1,
     }));
   };
+
   const totalVotes = votes.good + votes.neutral + votes.bad;
   const positiveRate = totalVotes
     ? Math.round((votes.good / totalVotes) * 100)
